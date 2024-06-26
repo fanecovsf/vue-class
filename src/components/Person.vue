@@ -1,7 +1,6 @@
 <template>
     <div>
         <h2>Essa pessoa é {{ name }}</h2>
-        <p>Estou trabalhando no momento</p>
         <Info/>
     </div>
 </template>
