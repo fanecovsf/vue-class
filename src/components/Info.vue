@@ -8,6 +8,7 @@
             <li>Node.Js</li>
         </ul>
         <p v-show="showEmail">Mande uma mensagem para: {{ email }}</p>
+        <p>Para acessar meu portifólio, clique <a v-bind:href="portLink" target="_blank">aqui</a></p>
     </div>
 </template>
 
@@ -18,7 +19,8 @@ export default {
         return {
             isWorking: false,
             showEmail: true,
-            email: 'teste@teste.com'
+            email: 'teste@teste.com',
+            portLink: 'https://google.com'
         }
     }
 }

@@ -4,6 +4,7 @@
     <LifeCycle/>
     <Person/>
     <FormVue/>
+    <PictureVue/>
   </div>
 </template>
 
@@ -12,6 +13,7 @@
   import FormVue from './components/form/Form.vue'
   import LifeCycle from './components/LifeCycle.vue'
   import Person from './components/Person.vue'
+  import PictureVue from './components/Picture.vue'
 
   export default {
     name: 'App',
@@ -19,7 +21,8 @@
       FirstComponent,
       LifeCycle,
       Person,
-      FormVue
+      FormVue,
+      PictureVue
     }
   }
 </script>
