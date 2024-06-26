@@ -40,3 +40,9 @@ export default {
     }
 }
 </script>
+
+<style>
+    a {
+        color: white;
+    }
+</style>
