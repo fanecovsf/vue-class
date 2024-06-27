@@ -1,16 +1,18 @@
 <template>
     <div>
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Projetos</a></li>
-            <li><a href="">Contatos</a></li>
+            <li :headerList="headherList" v-for="(header, index) in headerList" :key="index"><a href="">{{ header }}</a></li>
         </ul>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'Header'
+    name: 'Header',
+
+    props: {
+        headerList: Array
+    }
 }
 </script>
 

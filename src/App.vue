@@ -1,11 +1,11 @@
 <template>
   <div>
+    <HeaderVue :headerList="headerList"/>
     <FormVue/>
     <FirstComponent/>
     <LifeCycle/>
     <Person/>
     <PictureVue/>
-    <HeaderVue/>
   </div>
 </template>
 
@@ -26,6 +26,17 @@
       FormVue,
       PictureVue,
       HeaderVue
+    },
+
+    data() {
+      return {
+        headerList: [
+          'Home',
+          'Projetos',
+          'Contato',
+          'Instagram'
+        ]
+      }
     }
   }
 </script>

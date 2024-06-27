@@ -1,7 +1,7 @@
 <template>
     <div>
         <h2>Essa pessoa é {{ name }}</h2>
-        <Info/>
+        <Info :email="email"/>
     </div>
 </template>
 
@@ -12,7 +12,8 @@ export default {
     name: 'Person',
     data() {
         return {
-            name: 'Vinicius'
+            name: 'Vinicius',
+            email: 'props@email.com'
         }
     },
     

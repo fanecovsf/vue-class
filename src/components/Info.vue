@@ -16,17 +16,22 @@
         <p>Mande uma mensagem para:</p>
         <p v-show="showEmail">{{ email }}</p>
         <p>Para acessar meu portifólio, clique <a v-bind:href="portLink" target="_blank">aqui</a></p>
+        <p>{{ propsEmail }}</p>
     </div>
 </template>
 
 <script>
 export default {
     name: 'Info',
+
+    props: {
+        email: String
+    },
+
     data() {
         return {
             isWorking: false,
             showEmail: true,
-            email: 'teste@teste.com',
             portLink: 'https://google.com',
             toggleText: 'Esconder email',
             backendTecs: [
