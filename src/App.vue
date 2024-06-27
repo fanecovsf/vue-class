@@ -1,9 +1,9 @@
 <template>
   <div>
+    <FormVue/>
     <FirstComponent/>
     <LifeCycle/>
     <Person/>
-    <FormVue/>
     <PictureVue/>
     <HeaderVue/>
   </div>

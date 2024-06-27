@@ -13,7 +13,8 @@
         <div>
             <button @click="toggleEmail">{{ toggleText }}</button>
         </div>
-        <p v-show="showEmail">Mande uma mensagem para: {{ email }}</p>
+        <p>Mande uma mensagem para:</p>
+        <p v-show="showEmail">{{ email }}</p>
         <p>Para acessar meu portifólio, clique <a v-bind:href="portLink" target="_blank">aqui</a></p>
     </div>
 </template>
@@ -50,7 +51,7 @@ export default {
         async toggleEmail() {
             this.showEmail = !this.showEmail
             if (this.toggleText == 'Esconder email') {
-                this.toggleText = 'Mostrar botão'
+                this.toggleText = 'Mostrar email'
             } else {
                 this.toggleText = 'Esconder email'
             }
