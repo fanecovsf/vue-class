@@ -2,10 +2,13 @@
     <div>
         <button @click="first(txt1, $event), second(txt2, $event), third($event)">Ativar múltiplos eventos</button>
         <p>{{ multipleEvents }}</p>
+        <ReuseVue/>
     </div>
 </template>
 
 <script>
+    import ReuseVue from './Reuse.vue'
+
     export default {
         name: 'MultipleEvents',
         data() {
@@ -31,6 +34,10 @@
             async third(e) {
                 setTimeout(() => this.multipleEvents = "", 8000)
             }
+        },
+
+        components: {
+            ReuseVue
         }
     }
 </script>

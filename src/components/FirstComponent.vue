@@ -4,11 +4,15 @@
         <p>Componente {{name}}</p>
         <p>Idade: {{age}}</p>
         <MultipleEventsVue/>
+        <ReuseVue/>
+        <ReuseVue/>
+        <ReuseVue/>
     </div>
 </template>
 
 <script>
     import MultipleEventsVue from './MultipleEvents.vue'
+    import ReuseVue from './Reuse.vue'
 
     export default {
         name: 'FirstComponent',
@@ -20,7 +24,8 @@
         },
 
         components: {
-            MultipleEventsVue
+            MultipleEventsVue,
+            ReuseVue
         }
     }
 </script>
